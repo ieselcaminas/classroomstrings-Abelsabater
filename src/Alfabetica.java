@@ -11,10 +11,8 @@ public class Alfabetica {
                 break;
             }
         }
-
         return alfabetica;
     }
-
     public static void main(String[] args) {
         String palabra="mina";
         String palabra2="amor";
