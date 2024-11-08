@@ -1,5 +1,5 @@
 public class FraseInvertida {
-    public static String fraseinvertida(String frase){
+    public static String invertir(String frase){
         String cadena="";
         String [] fras=frase.split(" ");
         for (int i = fras.length -1;i>=0;--i) {
@@ -9,6 +9,6 @@ public class FraseInvertida {
     }
     public static void main(String[] args) {
         String cadena="Esto es una frase";
-        System.out.println(fraseinvertida(cadena));
+        System.out.println(invertir(cadena));
     }
 }
