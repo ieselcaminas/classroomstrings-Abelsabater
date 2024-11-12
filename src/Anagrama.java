@@ -2,9 +2,7 @@ public class Anagrama {
     public static boolean anagrama(String palabra1, String palabra2){
         boolean anagramas=false;
         int lletraiguals=0;
-        if(palabra1.length()!=palabra2.length()){
-            anagramas=false;
-        }else{
+        if(palabra1.length()==palabra2.length()){
             for (int i = 0; i < palabra1.length(); i++) {
                 for (int j = 0; j < palabra2.length(); j++) {
                     if(palabra1.charAt(i)==palabra2.charAt(j)){
