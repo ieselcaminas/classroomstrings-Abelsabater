@@ -2,22 +2,25 @@ public class Parentesis {
 
     public static boolean parentesis(String texto){
         boolean parentizada=false;
-        String texto2=texto.replaceAll("[abcdefghijklmnopqrstuvwxyz1234567890,.ḉ+'*/+" +
-                "_!·$%&/=<> ]","");
-        for (int i = 0; i < texto2.length()-1; i++) {
-            if(texto2.charAt(i)=='(' && texto2.charAt(i+1)==')' ){
-                parentizada=true;
-            }else {
-                parentizada=false;
+        int oberta=0;
+        int tancada=0;
+        for (int i = 0; i < texto.length(); i++) {
+            if(texto.charAt(i)=='('){
+                oberta++;
+            } else if (texto.charAt(i)==')') {
+                tancada++;
             }
+        }
+        if (oberta==tancada){
+            parentizada=true;
         }
 
         return parentizada;
 
     }
     public static void main(String[] args) {
-        String texto="(Esto es un texto bien parentizado)(hola,buenas)";
-        String texto2="Esto es un texto ) mal parentizado))(hola,buenas";
+        String texto="Esto (es (un ejemplo) (de) una (cadena bien) parentizada)";
+        String texto2="una )cadena (mal (parentizada) y (una() no lo esta";
         System.out.println(parentesis(texto.toLowerCase()));
         System.out.println(parentesis(texto2.toLowerCase()));
     }
