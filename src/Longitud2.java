@@ -19,6 +19,8 @@ public class Longitud2 {
         String cadena= "Esto es una frase hoy es un buen dia";
         if(longitudII(cadena,longitud)){
             System.out.println("Hi ha alguna que te "+longitud+" lletres");
+        }else{
+            System.out.println("No hi ha cap");
         }
     }
 }
