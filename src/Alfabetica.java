@@ -1,11 +1,10 @@
 public class Alfabetica {
     public static boolean alfabetica(String palabra){
-        boolean alfabetica=false;
+        boolean alfabetica=true;
         int valor=0;
         for (int i = 0; i < palabra.length(); i++) {
             if(palabra.charAt(i)>valor){
                 valor=palabra.charAt(i);
-                alfabetica=true;
             }else{
                 alfabetica=false;
                 break;
