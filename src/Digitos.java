@@ -9,7 +9,7 @@ public class Digitos {
         return digitos;
     }
     public static void main(String[] args) {
-        String cadena="un 1 y un 20";
+        String cadena="1 20 hola 234 45a";
         System.out.println(digitos(cadena));
     }
 }
