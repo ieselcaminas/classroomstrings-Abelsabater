@@ -10,7 +10,7 @@ public class DigitosII {
     }
     public static int cantidad(boolean numeros){
         int cant=0;
-        if(numeros==true){
+        if(numeros){
             cant++;
         }
         return cant;
