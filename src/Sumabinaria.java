@@ -4,10 +4,7 @@ public class Sumabinaria {
         int decimal1=Integer.parseInt(bin1,2);
         int decimal2=Integer.parseInt(bin2,2);
         int sumad=decimal1+decimal2;
-        do{
-            suma=sumad%2+suma;
-            sumad/=2;
-        }while(sumad>0);
+        suma=Integer.toBinaryString(sumad);
         return suma;
     }
     public static void main(String[] args) {
