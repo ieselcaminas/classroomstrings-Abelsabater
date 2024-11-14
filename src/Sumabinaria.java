@@ -1,5 +1,4 @@
 public class Sumabinaria {
-
     public static String sumabinaria(String  bin1, String  bin2){
         String suma="";
         int decimal1=0;
@@ -19,10 +18,8 @@ public class Sumabinaria {
             suma=sumad%2+suma;
             sumad/=2;
         }while(sumad>0);
-
         return suma;
     }
-
     public static void main(String[] args) {
         String bin1="11011011";
         String bin2="110110101";
