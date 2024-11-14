@@ -24,8 +24,8 @@ public class Sumabinaria {
     }
 
     public static void main(String[] args) {
-        String bin1="110";
-        String bin2="110";
+        String bin1="11011011";
+        String bin2="110110101";
         System.out.println(sumabinaria(bin1,bin2));
     }
 }
