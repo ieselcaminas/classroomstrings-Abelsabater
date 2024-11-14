@@ -23,7 +23,7 @@ public class Parentesis {
     }
     public static void main(String[] args) {
         String texto="Esto (es (un ejemplo) (de) una (cadena bien) parentizada)";
-        String texto2="una )cadena (mal parentizada y una no lo esta";
+        String texto2="una )cadena(mal parentizada y una no lo esta";
         System.out.println(parentesis(texto.toLowerCase()));
         System.out.println(parentesis(texto2.toLowerCase()));
     }
