@@ -6,7 +6,7 @@ public class Sumabinaria {
         int bi1;
         int bi2;
         int acarreo=0;
-        int llargaria=0;
+        int llargaria;
         if(bin1.length()>bin2.length()){
             llargaria=bin1.length();
             for (int i = bin2.length(); i < llargaria; i++) {
