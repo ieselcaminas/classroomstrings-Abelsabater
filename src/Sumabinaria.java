@@ -25,8 +25,6 @@ public class Sumabinaria {
             bi1=Integer.parseInt(""+b1);
             bi2=Integer.parseInt(""+b2);
             suma=bi1+bi2+acarreo;
-
-
             if(suma==0){
                 res="0"+res;
                 acarreo=0;
