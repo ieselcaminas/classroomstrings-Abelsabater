@@ -1,5 +1,4 @@
 public class Parentesis {
-
     public static boolean parentesis(String texto){
         boolean parentizada=false;
         int oberta=0;
@@ -17,9 +16,7 @@ public class Parentesis {
         if (oberta==tancada && ultima==")" ){
             parentizada=true;
         }
-
         return parentizada;
-
     }
     public static void main(String[] args) {
         String texto="Esto (es (un ejemplo) (de) una (cadena bien) parentizada)";
