@@ -48,8 +48,8 @@ public class Sumabinaria {
         return res;
     }
     public static void main(String[] args) {
-        String bin1="10110110";
-        String bin2="1001101";
+        String bin1="1110";
+        String bin2="1011";
         System.out.println(sumabinaria(bin1,bin2));
     }
 }
